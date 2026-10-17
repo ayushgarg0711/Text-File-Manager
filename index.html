@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Text File Manager</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-tag">File Management System</div>
+    <h1 class="hero-title">Text File Manager</h1>
+    <p class="hero-sub">create · read · update · delete — elegantly</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="app">
+    <aside class="side" aria-label="Workspace">
+      <div class="side-head">
+        <h2 class="side-title">Workspace</h2>
+        <span class="side-count" id="count"></span>
+      </div>
+      <div class="search"><input type="search" id="q" placeholder="Search files…" aria-label="Search files" autocomplete="off"></div>
+      <ul class="list" id="list"></ul>
+      <p class="side-note" id="note"></p>
+    </aside>
+
+    <main class="main">
+      <div class="tabs" role="tablist" aria-label="File operations" id="tabs"></div>
+      <section class="panel" id="panel" role="tabpanel"></section>
+    </main>
+  </div>
+
+  <div class="footer">Built with ♥ using HTML &amp; JavaScript &nbsp;·&nbsp; Text File Manager</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
